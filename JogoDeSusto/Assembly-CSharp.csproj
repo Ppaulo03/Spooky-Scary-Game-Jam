@@ -588,6 +588,9 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProGrids">
+ <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -599,6 +602,9 @@
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
  <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids.Editor">
+ <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Spooky-Scary-Game-Jam/JogoDeSusto/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
