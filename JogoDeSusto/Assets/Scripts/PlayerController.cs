@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    [SerializeField]
+    private Signal pressButton = null;
+
     [SerializeField]
     private CharacterController controller = null;
 
@@ -20,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space)) pressButton.Raise();
         if(Physics.CheckSphere(groundCheck.position, groundDistance, groundMask)) velocity.y = -2f;
         else velocity.y += gravity*Time.deltaTime;
         controller.Move(velocity*Time.deltaTime);
