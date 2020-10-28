@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Mechanics\MouseLook.cs" />
      <Compile Include="Assets\Scripts\Mechanics\Signal.cs" />
      <Compile Include="Assets\Scripts\Mechanics\SignalListener.cs" />
+     <Compile Include="Assets\Scripts\Piano.cs" />
      <Compile Include="Assets\Scripts\PickThing.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />
