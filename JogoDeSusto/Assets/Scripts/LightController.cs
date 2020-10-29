@@ -6,6 +6,10 @@ public class LightController : MonoBehaviour
 {
     [SerializeField] private Material ligthOn = null, lightOff = null;
     [SerializeField] private bool isOn = false;
+
+    [SerializeField] private Transform player = null;
+    [SerializeField] private Vector3 distanceM = Vector3.zero;
+
     private Light lightEffect;
     private MeshRenderer meshRenderer;
     private Material[] matArray;
@@ -16,6 +20,12 @@ public class LightController : MonoBehaviour
         matArray = meshRenderer.materials;
         isOn = !isOn;
         Turn();
+    }
+
+    private void Update() {
+        float distance = Mathf.Abs(transform.position.z - player.position.z);
+        if(Mathf.Abs(transform.position.z - player.position.z) > distanceM.z || Mathf.Abs(transform.position.x - player.position.x) > distanceM.x || Mathf.Abs(transform.position.y - player.position.y) > distanceM.y) lightEffect.enabled = false;
+        else lightEffect.enabled = true;
     }
 
     public void Turn(){

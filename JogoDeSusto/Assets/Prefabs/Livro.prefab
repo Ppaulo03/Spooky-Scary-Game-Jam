@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7453213396966020222}
   - component: {fileID: 7453213396966020216}
   - component: {fileID: 7453213396966020223}
+  - component: {fileID: 7453213397738107005}
   m_Layer: 0
   m_Name: Livro
   m_TagString: Untagged
@@ -143,8 +144,8 @@ MonoBehaviour:
   signalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7453213396966020223}
-        m_MethodName: Submmited
+      - m_Target: {fileID: 7453213397738107005}
+        m_MethodName: fly
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -168,3 +169,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasItem: {fileID: 11400000, guid: 072bb1ec241318e4d98741c8c179334a, type: 2}
   player: {fileID: 0}
+--- !u!114 &7453213397738107005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7759222536366893354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ccf403ea5323e47ba99f56b47bc04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  force: 15
+  correction: {x: 0, y: 0, z: 0}
+  randomize: 1

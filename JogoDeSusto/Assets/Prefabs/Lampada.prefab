@@ -20,7 +20,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2290352728227191355
 Transform:
@@ -95,16 +95,16 @@ Light:
   m_GameObject: {fileID: 1478068015653470337}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 2
+  m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.85121125, b: 0.2783019, a: 1}
-  m_Intensity: 50
-  m_Range: 30
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 25
+  m_Range: 41
+  m_SpotAngle: 179
+  m_InnerSpotAngle: 105.65281
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -137,7 +137,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ligthOn: {fileID: 2100000, guid: 985ce4f94cf9f1e428365737445af3b5, type: 2}
   lightOff: {fileID: 2100000, guid: 24b82173a84c4b34f82e4c4547dce969, type: 2}
-  isOn: 1
+  isOn: 0
 --- !u!114 &1748046288935026133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3561896625710269579
 Transform:
@@ -311,7 +311,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5728454999194363524
 Transform:
