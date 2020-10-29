@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Button.cs" />
+     <Compile Include="Assets\Scripts\FlyingBook.cs" />
      <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\LoopInfinito.cs" />
      <Compile Include="Assets\Scripts\Mechanics\GlobalBool.cs" />
