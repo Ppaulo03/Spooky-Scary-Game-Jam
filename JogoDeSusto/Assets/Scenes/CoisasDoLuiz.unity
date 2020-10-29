@@ -216,6 +216,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aea0d47af40f5b4cb048178a9df4efb, type: 3}
+--- !u!108 &20473966 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 344342004, guid: 8aea0d47af40f5b4cb048178a9df4efb,
+    type: 3}
+  m_PrefabInstance: {fileID: 20473965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &20473967 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 2014657766, guid: 8aea0d47af40f5b4cb048178a9df4efb,
+    type: 3}
+  m_PrefabInstance: {fileID: 20473965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &221733655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,12 +4513,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &278852935 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4961666074816626640, guid: 8aea0d47af40f5b4cb048178a9df4efb,
-    type: 3}
-  m_PrefabInstance: {fileID: 20473965}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &640571192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,8 +4571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleport: {fileID: 1997194248}
-  lantern: {fileID: 1095782574}
-  aura: {fileID: 278852935}
+  lantern: {fileID: 20473967}
+  aura: {fileID: 20473966}
   pass: {fileID: 11400000, guid: 3fc83f2bfd531db42a4fc4b35ffb2afc, type: 2}
   entry: 0
   chance: 50
@@ -4743,12 +4749,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!108 &1095782574 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4961666074392403313, guid: 8aea0d47af40f5b4cb048178a9df4efb,
-    type: 3}
-  m_PrefabInstance: {fileID: 20473965}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224281919
 GameObject:
   m_ObjectHideFlags: 0
@@ -29505,8 +29505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleport: {fileID: 640571193}
-  lantern: {fileID: 1095782574}
-  aura: {fileID: 278852935}
+  lantern: {fileID: 20473967}
+  aura: {fileID: 20473966}
   pass: {fileID: 11400000, guid: 3fc83f2bfd531db42a4fc4b35ffb2afc, type: 2}
   entry: 1
   chance: 50
