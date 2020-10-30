@@ -9,6 +9,7 @@ public class LightController : MonoBehaviour
 
     [SerializeField] private Transform player = null;
     [SerializeField] private Vector3 distanceM = Vector3.zero;
+    [SerializeField] private bool firstFloor = false;
 
     private Light lightEffect;
     private MeshRenderer meshRenderer;
@@ -25,6 +26,7 @@ public class LightController : MonoBehaviour
     private void Update() {
         float distance = Mathf.Abs(transform.position.z - player.position.z);
         if(Mathf.Abs(transform.position.z - player.position.z) > distanceM.z || Mathf.Abs(transform.position.x - player.position.x) > distanceM.x || Mathf.Abs(transform.position.y - player.position.y) > distanceM.y) lightEffect.enabled = false;
+        else if(firstFloor && transform.position.y < player.position.y) lightEffect.enabled = false;
         else lightEffect.enabled = true;
     }
 

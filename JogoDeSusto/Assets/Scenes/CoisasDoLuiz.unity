@@ -368,6 +368,11 @@ PrefabInstance:
       propertyPath: distanceM.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5080,6 +5085,11 @@ PrefabInstance:
       propertyPath: distanceM.z
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5397,7 +5407,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16772
+  m_Name: pb_Mesh16516
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5665,6 +5675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: distanceM.z
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
@@ -30747,6 +30762,11 @@ PrefabInstance:
       propertyPath: distanceM.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30921,6 +30941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: distanceM.z
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
@@ -31097,6 +31122,11 @@ PrefabInstance:
       propertyPath: distanceM.z
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31265,12 +31295,17 @@ PrefabInstance:
     - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: distanceM.x
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
       propertyPath: distanceM.z
-      value: 50
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748046288935026135, guid: e642a491fa24b6147b16e46c3a54103e,
+        type: 3}
+      propertyPath: firstFloor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2290352728227191355, guid: e642a491fa24b6147b16e46c3a54103e,
         type: 3}
@@ -31701,7 +31736,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16826
+  m_Name: pb_Mesh16574
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
