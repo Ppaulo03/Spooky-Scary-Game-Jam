@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7453213396966020216}
   - component: {fileID: 7453213396966020223}
   - component: {fileID: 7453213397738107005}
+  - component: {fileID: 1885694584}
   m_Layer: 0
   m_Name: Livro
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 7759222536366893354}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: -214.6, y: 29.78, z: 87.99}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalScale: {x: 25.000011, y: 25, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -144,8 +145,8 @@ MonoBehaviour:
   signalEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7453213397738107005}
-        m_MethodName: fly
+      - m_Target: {fileID: 7453213396966020223}
+        m_MethodName: Submmited
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -185,3 +186,30 @@ MonoBehaviour:
   force: 15
   correction: {x: 0, y: 0, z: 0}
   randomize: 1
+--- !u!114 &1885694584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7759222536366893354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528b8281ccf809f4580561a0f8fa8da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signal: {fileID: 11400000, guid: ec70d7d5c4deb1d42bbada24e56f6644, type: 2}
+  signalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7453213397738107005}
+        m_MethodName: fly
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
