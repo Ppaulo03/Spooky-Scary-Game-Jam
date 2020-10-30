@@ -14,6 +14,7 @@ public class LightController : MonoBehaviour
     private Light lightEffect;
     private MeshRenderer meshRenderer;
     private Material[] matArray;
+    private bool Flickering = false;
     private void Start() {
         
         lightEffect = GetComponent<Light>();
@@ -24,10 +25,12 @@ public class LightController : MonoBehaviour
     }
 
     private void Update() {
-        float distance = Mathf.Abs(transform.position.z - player.position.z);
-        if(Mathf.Abs(transform.position.z - player.position.z) > distanceM.z || Mathf.Abs(transform.position.x - player.position.x) > distanceM.x || Mathf.Abs(transform.position.y - player.position.y) > distanceM.y) lightEffect.enabled = false;
-        else if(firstFloor && transform.position.y < player.position.y) lightEffect.enabled = false;
-        else lightEffect.enabled = true;
+        if(isOn){
+            float distance = Mathf.Abs(transform.position.z - player.position.z);
+            if(Mathf.Abs(transform.position.z - player.position.z) > distanceM.z || Mathf.Abs(transform.position.x - player.position.x) > distanceM.x || Mathf.Abs(transform.position.y - player.position.y) > distanceM.y) lightEffect.enabled = false;
+            else if(firstFloor && transform.position.y < player.position.y) lightEffect.enabled = false;
+            else lightEffect.enabled = true;
+        }
     }
 
     public void Turn(){
@@ -39,9 +42,10 @@ public class LightController : MonoBehaviour
     }
 
     public void Flicker(){
-        if(isOn) StartCoroutine(FlickerCo());
+        if(isOn && !Flickering) StartCoroutine(FlickerCo());
     }
     private IEnumerator FlickerCo(){
+        Flickering = true;
         float originalLum = lightEffect.intensity;
         float brightness = originalLum;
         for(int i = 0; i < 5; i++){
@@ -58,6 +62,7 @@ public class LightController : MonoBehaviour
 
         }
         lightEffect.intensity = originalLum;
+        Flickering = false;
     }
 
 }
