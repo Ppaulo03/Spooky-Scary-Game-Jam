@@ -74,7 +74,11 @@ Material:
     - _Color: {r: 0.15743256, g: 0.15743256, b: 0.15743256, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+<<<<<<< Updated upstream
 --- !u!114 &1908672306711558250
+=======
+--- !u!114 &1697387217409802048
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
