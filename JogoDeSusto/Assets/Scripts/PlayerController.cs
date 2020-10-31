@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
 
     public bool haveItem = false;
-
+    
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)) pressButton.Raise();
@@ -41,4 +41,5 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right*Input.GetAxis("Horizontal") + transform.forward*Input.GetAxis("Vertical");
         controller.Move(move*speed*Time.deltaTime);
     }
+
 }
