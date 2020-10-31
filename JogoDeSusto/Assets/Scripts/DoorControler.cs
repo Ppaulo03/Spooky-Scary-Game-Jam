@@ -7,9 +7,7 @@ public class DoorControler : MonoBehaviour
     private Animator anim;
     private bool isOpened, inRange = false;
     
-    [SerializeField] private Signal DoorClosingSignal = null;
     [SerializeField] private float minTimeDoorClosing = 0f, maxTimeDoorClosing = 0f;
-
     
     void Start()
     {
@@ -18,17 +16,18 @@ public class DoorControler : MonoBehaviour
 
     public void Open()
     {
-        if(isOpened && inRange){
+        if(!isOpened && inRange){
             isOpened = true;
-            anim.SetTrigger("open");
+            anim.SetTrigger("Abrindo");
             StartCoroutine(closeCo());
         }  
     }
 
     private void Close()
     {
-        if(!isOpened){
+        if(isOpened){
             isOpened = false;
+            anim.SetTrigger("Fechando");
         }
     }
 
