@@ -34,11 +34,14 @@ public class LightController : MonoBehaviour
     }
 
     public void Turn(){
-        isOn = !isOn;
-        lightEffect.enabled = isOn;
-        if(isOn) matArray[1] = ligthOn;
-        else matArray[1] = lightOff;
-        meshRenderer.materials = matArray;
+        if(ligthOn != null && lightOff!=null){ 
+            isOn = !isOn;
+            lightEffect.enabled = isOn;
+            
+            if(isOn) matArray[1] = ligthOn;
+            else matArray[1] = lightOff;
+            meshRenderer.materials = matArray;
+         }
     }
 
     public void Flicker(){
