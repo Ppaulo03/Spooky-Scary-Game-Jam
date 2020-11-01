@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     private IEnumerator ChooseLevelCo(string level)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(level);
         while(!asyncOperation.isDone){
             yield return null;

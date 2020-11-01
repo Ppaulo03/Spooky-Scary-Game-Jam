@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cfee91e839d645c43a056b4ca1afeec9
   - enabled: 1
+    path: Assets/Scenes/Prologo.unity
+    guid: 2fd4264866bcf5942acd72f464f99557
+  - enabled: 1
     path: Assets/Scenes/CoisasDoLuiz.unity
     guid: 9d2fe02f10b20f047874e36ecc391bdf
   m_configObjects: {}
